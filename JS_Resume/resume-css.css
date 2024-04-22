@@ -1,0 +1,114 @@
+body {
+    background-color: lightblue;
+    margin: 0;
+    padding: 0;
+}
+
+.searchBox {
+    
+    margin: 20px auto;
+    text-align: left;
+    padding: 20px;
+}
+
+.NoFoundicon{
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    
+}
+
+.no-found-error{
+    color: red;
+}
+
+.container-box {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.left-box {
+    flex-basis: calc(30% - 10px);
+    margin-right: 10px;
+    padding-left: 5px;
+    background-color: rgb(234, 172, 224);
+}
+
+.right-box {
+    flex-basis: calc(68% - 10px);
+    margin-left: 10px;
+}
+
+.header-box {
+    text-align: center;
+    margin-bottom: 20px;
+    flex-basis: 100%;
+    background-color: rgb(46, 138, 168);
+}
+
+.icon1 {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #0b0b0b;
+    color: #fff;
+    font-size: 48px;
+    line-height: 120px;
+    margin: 0 auto 20px;
+}
+
+.section-box {
+    margin-bottom: 20px;
+}
+
+.section-box h2 {
+    color: #000000;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.section-box p, .section-box ul {
+    color: #333;
+    font-size: 16px;
+    margin: 0;
+}
+
+.section-box ul {
+    padding-left: 20px;
+}
+
+.section-box ul li {
+    list-style: disc;
+    margin-bottom: 5px;
+}
+
+.section-box p {
+    margin-bottom: 10px;
+}
+
+.section-box.work-experience p:first-child, .section-box.internship p:first-child {
+    font-weight: bold;
+}
+
+.app-det {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .left-section,
+    .right-section {
+        flex-basis: 100%; 
+    }
+}

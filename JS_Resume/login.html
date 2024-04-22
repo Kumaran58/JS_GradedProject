@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="login-css.css">
+
+</head>
+
+<body>
+
+    <div class="inputbox">
+        <h2 style="text-align: center;">Sign In</h2>
+
+        <label for="user">Username</label>
+        <input type="text" id="user" placeholder="Enter your Username">
+
+        <label for="pass">Password</label>
+        <input type="password" id="pass" placeholder="Enter your Password">
+
+        <button type="button" onclick="auth()">Login</button>
+
+        <br><br>
+        <span id="ans"></span>
+    </div>
+
+</body>
+
+</html>
+
+
+<script>
+    function auth() {
+        var user = document.getElementById("user").value;
+        var pass = document.getElementById("pass").value;
+        var res = document.getElementById("ans");
+
+        if (user == "admin" && pass == "123") {
+            localStorage.setItem("user-login", user);
+            window.location.href = 'resume.html';
+        } else {
+            res.innerHTML = "Invalid Credentials... Try Again";
+        }
+    }
+
+    function rollback() {
+        if (localStorage.getItem('user-login') !== null) {
+            window.location.href = 'resume.html';
+        }
+    }
+    rollback();
+</script>
+
+
